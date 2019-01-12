@@ -31,19 +31,19 @@ function createStore(reducer) {
 // How about having a collection of events that changes the list state of the app.
 
 // Example:-
-var addTodo = {
-  type: "ADD_TODO",
-  todo: {
-    id: 0,
-    text: "Task 1",
-    completed: false
-  }
-};
+// var addTodo = {
+//   type: "ADD_TODO",
+//   todo: {
+//     id: 0,
+//     text: "Task 1",
+//     completed: false
+//   }
+// };
 
-var removeTodo = {
-  type: "REMOVE_TODO",
-  id: 0
-};
+// var removeTodo = {
+//   type: "REMOVE_TODO",
+//   id: 0
+// };
 
 // Reducer will take a state and action and return a new state.
 // To increase the predictability of the state change we will use a pure function.
@@ -123,7 +123,7 @@ store.dispatch({
   }
 });
 store.dispatch({
-  type: "TOGGEL_TODO",
+  type: "TOGGLE_TODO",
   id: 0
 });
 store.dispatch({
@@ -134,4 +134,4 @@ store.dispatch({
     completed: false
   }
 });
-const unsubscribe = store.subscribe(() => {});
+// const unsubscribe = store.subscribe(() => {});
